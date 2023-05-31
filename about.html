@@ -1,0 +1,60 @@
+<!-- 1. Crear un nuevo archivo HTML llamado "about.html" en la misma carpeta que "mi-primera-pagina-web.html". Este nuevo archivo será tu página “Acerca de”. 
+
+2. Copiar el contenido de "services.html" en "about.html" como punto de partida.  Reemplazar el contenido dentro del elemento <div class="container"> con el siguiente código: 
+<h1>Acerca de</h1>
+<p>¡Bienvenido a nuestra página “Acerca de”! Aquí, aprenderás más sobre nuestra empresa y los servicios que ofrecemos.</p>
+
+Personaliza el párrafo con información acorde al sitio que estás creando. También puedes agregar más párrafos de ser necesario.
+
+3. Actualizar los enlaces de la barra de navegación de todos los archivos ("mi-primera-pagina-web.html", "services.html", "contact.html" y "about.html") para que apunten a las páginas correctas. 
+
+Agregar, además, el atributo “role” al elemento <nav> en todas las páginas para mejorar la accesibilidad de nuestro sitio web:
+    <nav class="navbar" role="navigation">
+Este atributo proporciona información adicional a las tecnologías de asistencia como lectores de pantalla para ayudar a los usuarios en condición de discapacidad a navegar y comprender mejor el contenido de tu sitio web.
+
+4. Ahora vamos a agregar imágenes a tu página “Acerca de”. Para ello, debes descargar tres imágenes que desees usar y guardarlas en la misma carpeta que tus archivos HTML. 
+
+En "about.html" agregar tres etiquetas <img> dentro del elemento <div class="container">, debajo de la etiqueta <p>:
+    <img src="elnombredetuimagen1.jpg" alt="Descripción de la imagen 1" />
+    <img src="elnombredetuimagen2.jpg" alt="Descripción de la imagen 2" />
+    <img src="elnombredetuimagen3.jpg" alt="Descripción de la imagen 3" />
+Reemplazar "elnombredetuimagen(...).jpg" con el nombre real de cada una de tus imágenes y proporcionarles una descripción relevante en el atributo “alt”.
+
+5.  Alinear horizontalmente y centrar las tres imágenes utilizando Flexbox.
+Necesitarás agregar un nuevo elemento contenedor (“div") a las imágenes para luego poder aplicarles los estilos CSS correspondientes.
+-->
+
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Mi Primer Website</title>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+        <header>
+          <div class="container-nav">
+            <nav class="navbar" role="navigation">
+              <a href="#" class="brand">Mi página web</a>
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <button class="button-menu-toggle">Menu</button>
+          </div>
+        </header>
+        <div class="container">
+            <h1>Acerca de</h1>
+            <p>¡Bienvenido a nuestra página “Acerca de”! Aquí, aprenderás más sobre nuestra empresa y los servicios que ofrecemos.</p>            
+        </div>
+        <div class="img-conteiner">
+            <img src="img/instagram.jpg" alt="Perfil de Instagram" id="img1"/>
+            <img src="img/logo.jpg" alt="Logo de Tortas Deliciosas Natty" id="img2"/>
+            <img src="img/facebook.png" alt="Perfil de fFacebook" id="img3"/>
+        </div>
+      <script src="script.js"></script>
+      </body>
+    </html>
